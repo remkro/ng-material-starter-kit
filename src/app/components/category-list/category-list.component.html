@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-card-title>Categories</mat-card-title>
+  <mat-card-content>
+  <mat-selection-list role="list"><mat-list-option role="listitem" *ngFor="let item of list$ | async">{{item}}</mat-list-option></mat-selection-list>
+  </mat-card-content>
+</mat-card>
