@@ -1,0 +1,16 @@
+<mat-card>
+  <mat-card-title>
+
+  </mat-card-title>
+  <mat-card-content>
+<mat-form-field appearance="fill">
+  <mat-label>Choose an option</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let item of list$ | async" [value]="item">
+     {{item.localName}}
+</mat-option>
+   </mat-select>
+</mat-form-field>
+
+  </mat-card-content>
+</mat-card>
