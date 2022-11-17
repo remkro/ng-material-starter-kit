@@ -1,0 +1,11 @@
+<mat-card>
+  <mat-card-title></mat-card-title>
+  <mat-card-content>
+ <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let item of list$ | async">
+  {{item}}
+</button>
+</mat-menu>
+  </mat-card-content>
+</mat-card>
