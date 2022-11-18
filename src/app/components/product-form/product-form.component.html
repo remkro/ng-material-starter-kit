@@ -30,11 +30,17 @@
   <div>
     <mat-form-field appearance="fill">
       <mat-label>Category</mat-label>
-      <input matInput type="text" placeholder="Category" formControlName="category" required>
-      <mat-error *ngIf="productForm.get('category')!.invalid">category is invalid</mat-error>
+      <mat-select formControlName="category">
+        <mat-option *ngFor="let category of categories$ | async" [value]="category" required>
+          {{category}}
+        </mat-option>
+      </mat-select>
     </mat-form-field>
   </div>
+
   <div>
     <button type="submit" mat-raised-button color="primary">Submit</button>
   </div>
 </form>
+
+
