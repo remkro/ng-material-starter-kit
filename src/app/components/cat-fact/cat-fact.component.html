@@ -1,0 +1,6 @@
+<mat-card>
+  <mat-card-title>Cat facts</mat-card-title>
+  <mat-card-content>
+<p *ngIf="data$ | async as data"> {{data.fact}}</p>
+  </mat-card-content>
+</mat-card>
