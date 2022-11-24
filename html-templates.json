@@ -89,6 +89,10 @@
     "title-description": {
       "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>",
       "content": "<h1>$title$</h1>\n<p>$description$</p>"
+    },
+    "bored-api": {
+      "container": "<ng-container *ngIf=\"$detailVariable$ | async as $itemVariable$\">$content$</ng-container>",
+      "content": "<p>Activity: <b>$activity$</b>,</p>\n<p>Type: $type$,</p>\n<p>People needed: $participants$</p>"
     }
   }
 }
